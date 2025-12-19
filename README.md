@@ -2,7 +2,7 @@
 
 ## Overview
 
-Clash Royale Deck Analyzer is a web-based application designed to help players analyze their decks in **Clash Royale**. The app provides insights into deck performance, archetypes, and key stats to optimize strategy and improve gameplay. Players can input their decks using a graphical interface, deck links, or by manually typing in cards.
+Clash Royale Deck Analyzer is an application designed to help players analyze their decks in **Clash Royale**. The app provides insights into deck performance, archetypes, and key stats to optimize strategy and improve gameplay. Players can input their decks using a graphical interface, deck links, or by manually typing in cards.
 
 ## Key Features
 
