@@ -1,7 +1,7 @@
-# Clash Royale Deck Analyzer  
+# Clash Royale Deck Analyzer 
 
-🏆 **HackSheffield 10 – People’s Choice Award**  
-**Link to the Devpost:** [Website](https://devpost.com/software/clash-royale-deck-simulator)
+### HackSheffield 10 – People’s Choice Award  
+**Devpost:** [View Project](https://devpost.com/software/clash-royale-deck-simulator)  
 
 ![HackSheffield 10 People's Choice Award](hacksheffield-peoples-choice.png)
 
