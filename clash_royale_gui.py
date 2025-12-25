@@ -1,4 +1,5 @@
 import os
+import sys
 import threading
 import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
@@ -17,6 +18,14 @@ from clash_royale_archetype_classifier import (
     train_new_model,
     EnhancedQuickClashPredictor,
 )
+
+def resource_path(relative_path):
+    """Get absolute path to resource, works for dev and for PyInstaller."""
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 
 class DragDropCardGUI:
@@ -205,7 +214,7 @@ class DragDropCardGUI:
 
     def load_card_images(self) -> None:
         """Load card images from 'images' directory."""
-        images_dir = "images"
+        images_dir = resource_path("images")
         if not os.path.exists(images_dir):
             return
 
@@ -650,7 +659,7 @@ class ClashRoyaleGUI:
 
             # Pie: Training data distribution (replace bar with pie)
             try:
-                training_file = "training_data.py"
+                training_file = resource_path("training_data.py")
                 if os.path.exists(training_file):
                     with open(training_file, "r") as f:
                         content = f.read()
@@ -705,7 +714,7 @@ class ClashRoyaleGUI:
                 w.destroy()
             self.overview_card_photos.clear()
 
-            images_dir = "images"
+            images_dir = resource_path("images")
             for cid in deck_card_ids:
                 info = get_card_info(cid)
                 if info:
@@ -990,9 +999,8 @@ class ClashRoyaleGUI:
 
         def load_model() -> None:
             try:
-                self.predictor = EnhancedQuickClashPredictor(
-                    "clash_royale_classifier.pth"
-                )
+                model_path = resource_path("clash_royale_classifier.pth")
+                self.predictor = EnhancedQuickClashPredictor(model_path)
                 self.root.after(
                     0, self.on_model_loaded, True, "Model loaded successfully!"
                 )
