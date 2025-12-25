@@ -1,6 +1,6 @@
 # Clash Royale Deck Analyzer
 
-### HackSheffield 10 – People’s Choice Award
+### HackSheffield 10 - People’s Choice Award
 **Devpost:** [View Project](https://devpost.com/software/clash-royale-deck-simulator)
 
 **Clash Royale Deck Analyzer** is a Python-based application that helps players analyze and optimize their Clash Royale decks. The app provides insights into **deck performance**, **archetypes**, and **key statistics** to enhance strategy and improve gameplay. Players can input their decks through a **graphical interface**, **deck link**, or **manual entry** for analysis.
