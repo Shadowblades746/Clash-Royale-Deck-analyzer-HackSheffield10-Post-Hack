@@ -19,6 +19,7 @@ from clash_royale_archetype_classifier import (
     EnhancedQuickClashPredictor,
 )
 
+
 def resource_path(relative_path):
     """Get absolute path to resource, works for dev and for PyInstaller."""
     try:
